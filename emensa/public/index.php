@@ -10,7 +10,7 @@ assert_path();
 
 try {
     if (!file_exists(realpath($_SERVER['DOCUMENT_ROOT'] . "/../vendor/autoload.php"))) {
-        echo "<h1>Abhängigkeiten nicht gefunden</h1><pre>DOCUMENT_ROOT: {$_SERVER['DOCUMENT_ROOT']}</pre><br><p>Datei nicht gefunden: <strong>{$_SERVER['DOCUMENT_ROOT']}/emensa/vendor/autoload.php</strong></p>";
+        echo "<h1>Abhängigkeiten nicht gefunden</h1><pre>DOCUMENT_ROOT: {$_SERVER['DOCUMENT_ROOT']}</pre><br><p>Datei nicht gefunden: <strong>{$_SERVER['DOCUMENT_ROOT']}\emensa\vendor\autoload.php</strong></p>";
         echo "<p>Häufigste Ursache</p><ul>
             <li>Das Verzeichnis <code>public/</code> ist <em>nicht</em> als Wurzelverzeichnis verwendet worden.</li>
             <li>Die Abhängigkeiten wurden nicht mit <code>composer update</code> installiert.</code></li>
@@ -173,7 +173,9 @@ class FrontController
             FrontController::showErrorMessage("<h1>Web Software Error</h1><img alt='shrug' src='https://c.tenor.com/9TEDud6eP2UAAAAC/woody-woodpecker-shrug-shoulders.gif'>" .
                 "<p>Keine entspreche Zuordnung der Route für {$ctrlName}::{$actionName} gefunden. Tippfehler in der Route?" .
                 "<p>Es konnte keine Klasse <abbr title='Gesucht im Verzeichnis {$controllerDirectory}'>" . $ctrlFile . "</abbr> gefunden werden! Request fehlgeschlagen.</p>" .
-                "<p> Prüfen Sie die Einträge in der Datei <code>config/web.php</code> und gleichen Sie den getätigten Aufruf damit ab.</p>");
+                "<p> Prüfen Sie die Einträge in der Datei <code>config/web.php</code> und gleichen Sie den getätigten Aufruf damit ab.</p>".
+                "<p>{$scriptPath} {$controllerDirectory}</p>"
+            );
         }
 
         // a file matching has been found, now try to load the class
