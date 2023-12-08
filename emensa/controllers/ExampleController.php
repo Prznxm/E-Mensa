@@ -1,5 +1,9 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'].'/../models/kategorie.php');
+<<<<<<< Updated upstream
+=======
+require_once ($_SERVER['DOCUMENT_ROOT'].'/../models/gericht.php');
+>>>>>>> Stashed changes
 
 class ExampleController
 {
