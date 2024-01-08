@@ -1,6 +1,6 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/emensa/models/db_handling.php');
-$verzeichnis = "C:\\Users\\herrd\\OneDrive\\Repository_Dennis\\E-Mensa\\emensa\\public\\img\\gerichte";
+require_once($_SERVER['DOCUMENT_ROOT'] . '/../models/db_handling.php');
+$verzeichnis = "C:\\Users\\NXM\\Documents\\GitHub\\E-Mensa\\emensa\\public\\img\\gerichte";
 
 $bildnamen = array();
 

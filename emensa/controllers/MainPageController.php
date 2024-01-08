@@ -1,6 +1,6 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/emensa/models/db_handling.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/emensa/models/take_img.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/../models/db_handling.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/../models/take_img.php');
 
 class MainPageController
 {
@@ -27,9 +27,9 @@ class MainPageController
          */
         foreach ($data as $key => $item) {
             if ($data[$key]['bildname'] == NULL) {
-                $data[$key]['bildname'] = "/emensa/public/img/gerichte/00_image_missing.jpg";
+                $data[$key]['bildname'] = "/img/gerichte/00_image_missing.jpg";
             } else {
-                $data[$key]['bildname'] = "/emensa/public/img/gerichte/" . $item['bildname'];
+                $data[$key]['bildname'] = "/img/gerichte/" . $item['bildname'];
             }
         }
 

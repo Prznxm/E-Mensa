@@ -35,7 +35,7 @@ session_start();
             set_letzteanmeldung($id,$date );
             set_anzahlanmeldungen($id);
             set_anzahlfeher($id);
-            header('Location:/emensa/public/');
+            header('Location:/');
             exit();
         }else{
             set_letzterfehler($id, $date);
@@ -53,6 +53,6 @@ session_start();
     $_SESSION['error_msg'] = "Fehler beim Abrufen der Benutzer-ID.";
 }
 
-header('Location:/emensa/public/anmeldung');
+header('Location:/anmeldung');
 exit(); */
 

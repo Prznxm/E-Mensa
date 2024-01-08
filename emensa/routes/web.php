@@ -7,12 +7,12 @@
  */
 
 return array(
-    '/emensa/public/'             => "MainPageController@mainPageController",
-    '/emensa/public/anmeldung' => 'AnmeldungController@anmeldung',
-    '/emensa/public/profil' => 'ProfilController@profil',
-    '/emensa/public/abmelden' => 'AnmeldungController@abmelden',
-    '/emensa/public/ver' => 'AnmeldungController@ver',
-    "/emensa/public/demo"         => "DemoController@demo",
+    '/'             => "MainPageController@mainPageController",
+    '/anmeldung' => 'AnmeldungController@anmeldung',
+    '/profil' => 'ProfilController@profil',
+    '/abmelden' => 'AnmeldungController@abmelden',
+    '/ver' => 'AnmeldungController@ver',
+    "/demo"         => "DemoController@demo",
     '/dbconnect'    => 'DemoController@dbconnect',
     '/debug'        => 'HomeController@debug',
     '/error'        => 'DemoController@error',
@@ -21,11 +21,11 @@ return array(
     // Erstes Beispiel:
     '/m4_6a_queryparameter' => 'ExampleController@m4_6a_queryparameter',
     '/m4' => 'ExampleController@m4_6a_queryparameter',
-    '/emensa/public/m4_6a_queryparameter' => 'ExampleController@m4_6a_queryparameter',
-    '/emensa/public/m4_7a_queryparameter' => 'ExampleController@m4_7a_queryparameter',
-    '/emensa/public/m4_7b_kategorie' => 'ExampleController@m4_7b_kategorie',
-    '/emensa/public/m4_7c_gerichte' => 'ExampleController@m4_7c_gerichte',
+    '/m4_6a_queryparameter' => 'ExampleController@m4_6a_queryparameter',
+    '/m4_7a_queryparameter' => 'ExampleController@m4_7a_queryparameter',
+    '/m4_7b_kategorie' => 'ExampleController@m4_7b_kategorie',
+    '/m4_7c_gerichte' => 'ExampleController@m4_7c_gerichte',
 
-    '/emensa/public/m4_7d_page' => 'ExampleController@m4_7d_page',
+    '/m4_7d_page' => 'ExampleController@m4_7d_page',
 
     );

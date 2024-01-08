@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/emensa/models/db_handling.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/../models/db_handling.php');
 class  AnmeldungController{
 
     public function anmeldung()
@@ -45,7 +45,7 @@ class  AnmeldungController{
                     set_anzahlfeher($id);
                     $log = logger('info');
                     $log->info($_SESSION['name']." hat sich eingeloggt");
-                    header('Location:/emensa/public/');
+                    header('Location:/');
                     exit();
                 }else{
 
@@ -66,7 +66,7 @@ class  AnmeldungController{
             $_SESSION['error_msg'] = "Fehler beim Abrufen der Benutzer-ID.";
         }
 
-        header('Location:/emensa/public/anmeldung');
+        header('Location:/anmeldung');
         exit();
     }
 
@@ -78,7 +78,7 @@ class  AnmeldungController{
              $log = logger('info');
              $log->warning($_SESSION['name']." hat sich abgemeldet!");
              session_destroy();
-             header('Location:/emensa/public/');
+             header('Location:/');
              exit();
          }
      }

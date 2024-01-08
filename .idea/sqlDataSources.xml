@@ -7,6 +7,22 @@
         <node kind="schema" qname="emensawerbeseite" />
       </scope>
     </mapping>
+    <mapping uuid="ed6b80ba-79dd-4f96-8d9a-3f95c182ead4" name="DDL data source Mapping">
+      <data-sources ddl="875c726b-d73a-4b7e-b5ce-50d8014de488" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+    <mapping uuid="5c0b38c5-752b-4a7a-b18f-b4a637f7d6f9" name="@localhost2 Mapping">
+      <data-sources db="d0285c56-e347-498a-982c-f1b6e74211a6" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
   </component>
   <component name="SqlDataSourceStorage">
     <option name="dataSources">
@@ -14,7 +30,6 @@
         <State>
           <option name="id" value="63437751-6d7d-408a-8a52-9a2d48694835" />
           <option name="name" value="DDL data source" />
-          <option name="dbmsName" value="MARIADB" />
           <option name="urls">
             <array>
               <option value="file://$PROJECT_DIR$/emensawerbeseite" />
@@ -25,7 +40,6 @@
         <State>
           <option name="id" value="875c726b-d73a-4b7e-b5ce-50d8014de488" />
           <option name="name" value="DDL data source" />
-          <option name="dbmsName" value="MARIADB" />
           <option name="urls">
             <array>
               <option value="file://$PROJECT_DIR$/emensawerbeseite/emensawerbeseite" />

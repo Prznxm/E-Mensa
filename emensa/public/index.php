@@ -1,15 +1,15 @@
 <?php
 const VERBOSITY = 0;
 const PUBLIC_DIRNAME = "public";
-const CONFIG_WEBROUTES = "/emensa/routes/web.php"; // like in laravel
-const CONFIG_DB = "/emensa/config/db.php";
+const CONFIG_WEBROUTES = "/../routes/web.php"; // like in laravel
+const CONFIG_DB = "/../config/db.php";
 const ROUTER_VERSION = '0.8.2';
 session_start();
 assert_php_version('8.2.0');
 assert_path();
 
 try {
-    if (!file_exists(realpath($_SERVER['DOCUMENT_ROOT'] . "/emensa/vendor/autoload.php"))) {
+    if (!file_exists(realpath($_SERVER['DOCUMENT_ROOT'] . "/../vendor/autoload.php"))) {
         echo "<h1>Abhängigkeiten nicht gefunden</h1><pre>DOCUMENT_ROOT: {$_SERVER['DOCUMENT_ROOT']}</pre><br><p>Datei nicht gefunden: <strong>{$_SERVER['DOCUMENT_ROOT']}/../vendor/autoload.php</strong></p>";
         echo "<p>Häufigste Ursache</p><ul>
             <li>Das Verzeichnis <code>public/</code> ist <em>nicht</em> als Wurzelverzeichnis verwendet worden.</li>
@@ -18,7 +18,7 @@ try {
         exit(1);
     }
     // file exists
-    require_once realpath($_SERVER['DOCUMENT_ROOT'] . "/emensa/vendor/autoload.php");
+    require_once realpath($_SERVER['DOCUMENT_ROOT'] . "/../vendor/autoload.php");
 
 } catch (Exception $ex) {
     echo "<code>DOCUMENT_ROOT</code><br><pre>{$_SERVER['DOCUMENT_ROOT']}</pre><code>Error</code><br><pre>" . $ex->getMessage() . "</pre>";

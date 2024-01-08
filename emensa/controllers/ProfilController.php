@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/emensa/models/db_handling.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/../models/db_handling.php');
 
 class ProfilController{
 
@@ -10,7 +10,7 @@ class ProfilController{
             $daten = get_all_user($_SESSION['id']);
             return view('examples.pages.profil', ['daten' => $daten]);
         }else{
-            header('Location:/emensa/public/anmeldung');
+            header('Location:/anmeldung');
         }
 
 
