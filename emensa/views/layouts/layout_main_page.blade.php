@@ -3,7 +3,7 @@
 <html lang="de">
 <head>
 
-    <link rel="stylesheet" type="text/css" href='/emensa/views/examples/pages/main.css'>
+    <link rel="stylesheet" type="text/css" href='/main.css'>
     <style>
         main{
             display: grid;
