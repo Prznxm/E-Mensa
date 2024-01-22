@@ -7,7 +7,7 @@
  */
 
 return array(
-    '/public'             => "MainPageController@mainPageController",
+    '/'             => "MainPageController@mainPageController",
     '/anmeldung' => 'AnmeldungController@anmeldung',
     '/reg' => 'AnmeldungController@reg',
     '/bewertungen' => 'BewertungController@bewertungen',

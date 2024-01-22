@@ -32,7 +32,7 @@
  <button name="back" onclick="back_()">Zurück</button>
  <script>
  function back_(){
- window.location.href = "/public";
+ window.location.href = "/";
  }
 
  </script>
