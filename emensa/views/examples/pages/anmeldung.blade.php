@@ -8,7 +8,7 @@
 <hr>
 @section('main-content')
 
-    <form name="ameldung_form" method="post" action="/emensa/public/ver">
+    <form name="ameldung_form" method="post" action="/../public/ver">
     <label for="input_email">E-Mail</label>
     <input type="text"  name="email_input" value="Ihre Email" id="input_email" onfocus="hide_text(this,'Ihre Email')">
     <label for="input_pw">Passwort</label>

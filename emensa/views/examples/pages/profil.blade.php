@@ -28,7 +28,7 @@
      <button name="back" onclick="back_()">Zurück</button>
     <script>
         function back_(){
-            window.location.href = "/emensa/public/";
+            window.location.href = "/public";
         }
 
     </script>

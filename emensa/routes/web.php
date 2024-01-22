@@ -1,4 +1,4 @@
-<?php
+    <?php
 /**
  * Mapping of paths to controllers.
  * Note, that the path only supports one level of directory depth:
@@ -7,11 +7,14 @@
  */
 
 return array(
-    '/'             => "MainPageController@mainPageController",
+    '/public'             => "MainPageController@mainPageController",
     '/anmeldung' => 'AnmeldungController@anmeldung',
+    '/reg' => 'AnmeldungController@reg',
+    '/bewertungen' => 'BewertungController@bewertungen',
+    '/meineBewertung' => 'BewertungController@meineBewertung',
     '/profil' => 'ProfilController@profil',
     '/abmelden' => 'AnmeldungController@abmelden',
-    '/ver' => 'AnmeldungController@ver',
+    '/public/ver' => 'AnmeldungController@ver',
     "/demo"         => "DemoController@demo",
     '/dbconnect'    => 'DemoController@dbconnect',
     '/debug'        => 'HomeController@debug',
